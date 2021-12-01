@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find Method</title>
+        <style>
+            div{
+                border: 5px solid green;
+                padding: 30px;
+            }
+            div > ul {
+                border: 5px solid blue;
+                padding: 30px;
+            }
+            div > ul > li {
+                border: 5px solid orange;
+                padding: 30px;
+            }
+            div > ul > li > a {
+                display: block;
+                border: 5px solid pink;
+                padding: 30px;
+            }
+            div >ul > li > a > span{
+                display: block;
+                border: 5px dashed red;
+                padding: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            DIV
+            <div>
+                DIV
+                <div>
+                    DIV
+                    <ul>
+                        UL
+                        <li>
+                            LI
+                            <a href="">
+                                A
+                                <span>SPAN</span>
+                            </a>
+                        </li>
+                        <li>
+                            LI
+                            <a href="">A
+                                <span>SPAN</span>
+                            </a>
+                        </li>
+                        <li>
+                            LI
+                            <a href="">
+                                <span>SPAN</span>
+                            </a>
+                        </li>
+                        <li>
+                            LI
+                            <a href="">
+                                A
+                                <span>SPAN</span>
+                            </a>
+                        </li>
+                        <li>
+                            LI
+                            <a href="">
+                                A
+                                <span>SPAN</span>
+                            </a>
+                        </li>
+                        <li>
+                            LI
+                            <a href="">
+                                A
+                                <span>SPAN</span>
+                            </a>
+                        </li>
+                        <li>
+                            LI
+                            <a href="">
+                                A
+                                <span>SPAN</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+                // 1. Check for page load 
+
+                    //1.1 ()();
+                    //1.2 jQuery(function($){});
+                    //1.3 $(document).ready(function($){});
+
+                // 1. 
+                jQuery(function($){
+                    //alert('Page loaded successfully')
+                });
+
+                // 2. Find Method
+
+                // Find method is traversing down method
+
+                // $(selector).action();
+
+                $('div').find('ul').css({'border':'40px dotted purple'});
+
+
+
+
+        </script>
+    </body>
+</html>
